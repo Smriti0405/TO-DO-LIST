@@ -1,0 +1,161 @@
+
+* {
+	margin: 0;
+	/* box-sizing: border-box; */
+	font-family: "Fira sans", sans-serif;
+    background-color: rgb(245, 225, 135);
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	color: #FFF;
+	background-color: var(--dark);
+}
+
+header {
+	padding: 2rem 1rem;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+header h1{ 
+	font-size: 3rem;
+	font-weight: 300;
+	color: var(--grey);
+	margin-bottom: 1rem;
+    /* margin-left: 16rem; */
+    color: #151616;
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+}
+
+#new-task-form {
+	display: flex;;
+}
+
+
+#new-task-input {
+	flex: 1 1 0%; 
+	background-color: rgb(216, 62, 100);
+	padding: 1rem;
+	border-radius: 1rem;
+	/* margin-right: 1rem; */
+    margin-left: 6rem;
+    margin-top: 2.3rem;
+	color: black;
+	font-size: 1.5rem;
+}
+
+/* #new-task-input::placeholder {
+	color: gainsboro;
+} */
+
+#new-task-submit {
+    width: 5rem;
+    height: 3rem;
+    margin-left: 3rem;
+    margin-top: 2.8rem;
+	color: black;
+	font-size: 1.25rem;
+	font-weight: bold;
+	background-color: rgb(241, 238, 3);
+    border-radius: 0.5rem;
+	cursor: pointer;
+
+}
+
+#new-task-submit:hover {
+	opacity: 0.8;
+}
+
+#new-task-submit:active {
+	opacity: 0.6;
+}
+
+main {
+	flex: 1 1 0%;
+	max-width: 832px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.task-list {
+	padding: 1rem;
+}
+
+.task-list h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(53, 4, 4);
+	margin-bottom: 2rem;
+    font-style: italic;
+    font-family: Georgia;
+    text-align: center;
+}
+
+#tasks .task {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 1rem;
+	padding: 0.2rem;
+	/* border-radius: 1rem; */
+	margin-bottom: 1rem;
+}
+
+.task .content {
+	flex: 1 1 0%;
+}
+
+.task .content .text {
+    background-color: rgb(255, 208, 0);
+	color: black;
+	font-size: 1.25rem;
+	width: 46rem;
+    height: 2rem;
+	display: block;
+	/* transition: 0.4s; */
+}
+
+.task .actions {
+	display: flex;
+	margin: 0 -0.5rem;
+}
+
+.task .actions button {
+	cursor: pointer;
+    border: none;
+	font-size: 2rem;
+	font-weight: bold;
+    background-color: red;
+}
+
+.task .actions button:hover {
+	opacity: 0.8;
+}
+
+.task .actions button:active {
+	opacity: 0.6;
+}
+
+.task .actions .delete {
+	color: crimson;
+}
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family: "Arial", Helvetica, sans-serif;
+}
+i{
+    font-size:70px;
+    cursor: pointer;
+    position: absolute;
+    top: 10%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+	/* background-color: #151616; */
+}
